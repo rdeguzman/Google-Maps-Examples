@@ -8,14 +8,16 @@
       html, body, #map_canvas {
         margin: 0;
         padding: 0;
-        height: 100%;
+        height: 80%;
+        width: 80%;
       }
       .marker_title{
         background: red;
         text-align: center;
         margin-top: 10px;
         font-size: 12px;
-        font-family: Arial
+        font-family: Arial;
+        color: white;
       }
       .marker_image{
         margin-top: -10px;
@@ -41,7 +43,15 @@
           draggable: true,
           flat: true,
           anchor: RichMarkerPosition.BOTTOM,
-          content: '<div class="marker_title">Service Van</div><div class="marker_image"><img src="icon.png"/></div>'
+          content: '<div class="marker_title">Staggard</div><div class="marker_image"><img src="icon.png"/></div>'
+        });
+
+        var infoWindow = new google.maps.InfoWindow();
+        infoWindow.setContent("Hello World");
+        marker.infoWindow = infoWindow;
+
+        google.maps.event.addListener(marker, 'click', function(){
+          infoWindow.open(map, marker);
         });
 
       }
