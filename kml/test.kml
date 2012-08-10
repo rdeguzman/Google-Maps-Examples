@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+		<name>Searcharoo Results for: newyork</name>
+		<description>Test1</description>
+    <Placemark>
+      <name><![CDATA[Placemark 1]]></name>
+      <description><![CDATA[Desc 1]]></description>
+      <Style><IconStyle><Icon><href>http://searcharoo.net/searcharoov6/testfiles/brooklynbridge%20(perspective).jpg</href></Icon></IconStyle></Style>
+      <Point>
+        <extrude>1</extrude>
+		    <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates>119.431961,-22.32825,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
